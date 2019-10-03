@@ -1,0 +1,9 @@
+.button{
+    background-color: $fondo;
+    border: 1px solid $fondo;
+    width:30px;
+    height:30px;
+    &:focus{
+        outline-color:  $fondo;
+    }
+}

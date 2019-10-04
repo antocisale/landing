@@ -1,0 +1,30 @@
+.button1{
+    background-color: $fondo;
+    color:$blanco;
+    padding:18px;
+    border: 2px solid $blanco;
+    font-size:22px;
+    font-weight: 700;
+    border-radius:5px;
+    &:hover{
+        background-color: $blanco;
+        color:$fondo;
+    }
+
+}
+
+.button2{
+    background-color: $gris;
+    color:$blanco;
+    padding:10px;
+    border: 1px solid $blanco;
+    font-size:15px;
+    font-weight: 600;
+    border-radius:5px;
+    &:hover{
+        background-color: $blanco;
+        color:$fondo;
+    }
+
+}
+

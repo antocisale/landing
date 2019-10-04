@@ -1,6 +1,10 @@
 @import 'common/variables';
+@import 'common/mixins';
 @import 'common/all';
 @import 'components/menu';
 @import 'components/input';
 @import 'sections/hero';
-@import 'common/button';
+@import 'components/button';
+@import 'sections/featured';
+@import 'sections/browser';
+@import 'sections/contact';

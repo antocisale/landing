@@ -5,7 +5,7 @@
     margin-top:50px;
 }
 .image{
-    height:380px;
+    height:390px;
     width:300px;
     background-color: $blanco;
     color: $fondo;
@@ -34,5 +34,24 @@
     &:before{
         color:$gris;
         font-size:20px;
+    }
+}
+
+.titulo-featured{
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+}
+.contenedor-prod{
+    display:flex;
+    flex-direction: column;
+    width:80%;
+    justify-content:center;
+    align-items:center;
+    @include tablet{
+        flex-flow: column wrap;
+    }
+    @include desktop{
+        flex-flow: row wrap;
     }
 }

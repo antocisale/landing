@@ -22,22 +22,23 @@
         <input type="checkbox" id="menu">
         <nav>
                 <ul>
-                    <li class="menu-list"><a href="#">Home</a></li>
-                    <li class="menu-list"><a href="#">Woman</a></li>
-                    <li class="menu-list"><a href="#">Man</a></li>
-                    <li class="menu-list"><a href="#">Unisex</li>
-                    <li id="accesorios" class="menu-list"><a href="#">Accesories <i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+                    <li class="menu-list"><a href="#" class="menu1">Home</a></li>
+                    <li class="menu-list"><a href="#" class="menu1">Woman</a></li>
+                    <li class="menu-list"><a href="#" class="menu1">Man</a></li>
+                    <li class="menu-list"><a href="#" class="menu1">Unisex</li>
+                    <li id="accesorios" class="menu-list"><a href="#" class="menu1">Accesories <i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
                     <ul id="menu-accesorios" class="menu-list">
-                        <li><a href="#">Watches</a></li>
-                        <li><a href="#">Chains</a></li>
-                        <li><a href="#">Earings</a></li>
-                        <li><a href="#">Hats</a></li>
+                        <li><a href="#" class="menu1">Watches</a></li>
+                        <li><a href="#" class="menu1">Chains</a></li>
+                        <li><a href="#" class="menu1">Earings</a></li>
+                        <li><a href="#" class="menu1">Hats</a></li>
                     </ul>
-                    <li class="menu-list">
-                        <input type="text" name="search" value="" placeholder="Search">
-                        <button type="button">Search</button></li>
-                    </div>
                 </ul>
+                <div id="search-menu">
+                    <input type="text" name="search" value="" placeholder="Search" id="search-area">
+                    <button type="button" id="search-button">Search</button></li>
+                </div>
+                
             </nav>
     </div>
     <!--Sección del Hero-->
@@ -49,109 +50,122 @@
 
     <!--Sección de Productos Featured-->
     <section class="featured">
-        <button type="button" class="button1">View All</button>
-        <h2>Featured Products</h2>
-        <article class="image">
-            <img src="images/001.jpg" alt="Abnomality Plain White" class="img-feat">
-            <div class="img-txt">
-                <p class="product">Abnomality Plain White</p>
-                <p class="price">$17,99</p>
-            </div>
-            <div class="stars">
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star-half" aria-hidden="true"></i>
-            </div>
-        </article>
-        <article class="image">
-            <img src="images/002.jpg" alt="Denim Jacket" class="img-feat">
-            <div class="img-txt">
-                <p class="product">Denim Jacket</p>
-                <p class="price">$49,99</p>
-            </div>
-            <div class="stars">
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star-half" aria-hidden="true"></i>
-            </div>
-        </article>
-        <article class="image">
-            <img src="images/003.jpeg" alt="Dark Red Bomber" class="img-feat">
-            <div class="img-txt">
-                <p class="product">Dark Red Bomber</p>
-                <p class="price">$39,99</p>
-            </div>
-            <div class="stars">
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star-half" aria-hidden="true"></i>
-            </div>
-        </article>
-        <article class="image">
-            <img src="images/004.jpg" alt="Ripped Blue" class="img-feat">
-            <div class="img-txt">
-                <p class="product">Ripped Blue</p>
-                <p class="price">$39,99</p>
-            </div>
-            <div class="stars">
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star-half" aria-hidden="true"></i>
-            </div>
-        </article>
-        <article class="image">
-            <img src="images/005.jpeg" alt="Spooky Fingers" class="img-feat">
-            <div class="img-txt">
-                <p class="product">Spooky Fingers</p>
-                <p class="price">$34,99</p>
-            </div>
-            <div class="stars">
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star-half" aria-hidden="true"></i>
-            </div>
-        </article>
-        <article class="image">
-            <img src="images/006.jpeg" alt="Early Xmas Party" class="img-feat">
-            <div class="img-txt">
-                <p class="product">Early Xmas Party</p>
-                <p class="price">$44,99</p>
-            </div>
-            <div class="stars">
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star-half" aria-hidden="true"></i>
-            </div>
-        </article>
+        <div class="titulo-featured">
+            <button type="button" class="button1">View All</button>
+            <h2>Featured Products</h2>
+        </div>
+        <div class="contenedor-prod">
+                      <article class="image">
+                        <img src="images/001.jpg" alt="Abnomality Plain White" class="img-feat">
+                        <div class="img-txt">
+                            <p class="product">Abnomality Plain White</p>
+                            <p class="price">$17,99</p>
+                        </div>
+                        <div class="stars">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                        </div>
+                    </article>
+
+                    <article class="image">
+                        <img src="images/002.jpg" alt="Denim Jacket" class="img-feat">
+                        <div class="img-txt">
+                            <p class="product">Denim Jacket</p>
+                            <p class="price">$49,99</p>
+                        </div>
+                        <div class="stars">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                        </div>
+                    </article>
+
+                    <article class="image">
+                        <img src="images/003.jpeg" alt="Dark Red Bomber" class="img-feat">
+                        <div class="img-txt">
+                            <p class="product">Dark Red Bomber</p>
+                            <p class="price">$39,99</p>
+                        </div>
+                        <div class="stars">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                        </div>
+                    </article>
+
+                    <article class="image">
+                        <img src="images/004.jpg" alt="Ripped Blue" class="img-feat">
+                        <div class="img-txt">
+                            <p class="product">Ripped Blue</p>
+                            <p class="price">$39,99</p>
+                        </div>
+                        <div class="stars">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                        </div>
+                    </article>
+
+                    <article class="image">
+                        <img src="images/005.jpeg" alt="Spooky Fingers" class="img-feat">
+                        <div class="img-txt">
+                            <p class="product">Spooky Fingers</p>
+                            <p class="price">$34,99</p>
+                        </div>
+                        <div class="stars">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                        </div>
+                    </article>
+
+                    <article class="image">
+                        <img src="images/006.jpeg" alt="Early Xmas Party" class="img-feat">
+                        <div class="img-txt">
+                            <p class="product">Early Xmas Party</p>
+                            <p class="price">$44,99</p>
+                        </div>
+                        <div class="stars">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                        </div>
+                    </article>
+        </div>
     </section>
 
     <!--Sección de Browse Items-->
     <section class="browser">
         <h2>Browse Items</h2>
-        <article class="it-browser shoes">
-            <a href="#">Shoes</a>
-        </article>
-        <article class="it-browser jeans">
-            <a href="#">Jeans</a>
-        </article>
-        <article class="it-browser shirts">
-            <a href="#">Shirts</a>
-        </article>
-        <article class="it-browser outfits">
-            <a href="#">Outfits</a>
-        </article>
+        <div>
+            <article class="it-browser shoes">
+                <a href="#">Shoes</a>
+            </article>
+            
+            <article class="it-browser jeans">
+                <a href="#">Jeans</a>
+            </article>
+            
+            <article class="it-browser shirts">
+                <a href="#">Shirts</a>
+            </article>
+        </div>
+            <article class="it-browser outfits">
+                <a href="#">Outfits</a>
+            </article>
     </section>
 
     <!--Sección de contacto-->
@@ -197,5 +211,4 @@
 </body>
 
 
-<!--Comentario de prueba-->
 </html>

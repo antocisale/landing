@@ -28,3 +28,15 @@
 
 }
 
+#search-button{
+    height:38px;
+    background-color:$fondo;
+    color:$azul;
+    border:1px solid $azul;
+    border-radius:5px;
+    &:hover{
+        background-color:$azul;
+        color:$blanco;
+        transition: background-color 0.8s ease;
+    }
+}

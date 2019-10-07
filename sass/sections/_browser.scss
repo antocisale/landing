@@ -3,6 +3,7 @@
     flex-direction:column;
     align-items:$centro;
     padding-bottom:30px;
+
 }
 
 .it-browser{
@@ -17,25 +18,49 @@
         background: url(../../landing/images/shoes.jpg);
         background-size: cover;
         background-position:$centro;
+        @include tablet{
+            width:550px;
+            max-width:700px;
+        }
     }
     &.jeans{
         background: url(../../landing/images/jeans.jpeg);
         background-size: cover;
         background-position:$centro;
         height:400px;
+        @include tablet{
+            max-height: 250px;
+        }
     }
     &.shirts{
         background: url(../../landing/images/shirts.jpg);
         background-size: cover;
         background-position:$centro;
+        @include tablet{
+            position:absolute;
+            left: 300px;
+            bottom:0px;
+        }
     }
     &.outfits{
         background: url(../../landing/images/outfits.jpg);
         background-size: cover;
         background-position:$centro;
         height: 400px;
+        @include tablet{
+            height:520px;
+            max-width:250px;
+        }
     }
     &:hover{
         box-shadow: 0px 0px 8px $light;
+    }
+}
+
+#browse-it{
+    @include tablet{
+      display: flex;
+      flex-flow: row wrap;
+        position:relative;
     }
 }

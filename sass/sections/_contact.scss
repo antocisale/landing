@@ -8,6 +8,9 @@
 .divider{
     border:1px solid $blanco;
     width:250px;
+    @include tablet{
+        width:90%;
+    }
 }
 
 .direccion{
@@ -24,6 +27,10 @@ p{
     flex-direction:column;
     align-items:center;
     margin-bottom:10px;
+    @include tablet{
+        width:25%;
+
+    }
 }
 
 .dir{
@@ -37,6 +44,7 @@ p{
 .anchor{
     font-size:18px;
     font-weight:400;
+    color: $azul;
     &:link{
         text-decoration:none;
         color: $azul;
@@ -45,6 +53,9 @@ p{
 .map{
     width:80%;
     padding-top:20px;
+    @include tablet{
+        max-width:45%;
+    }
 }
 
 #txt{
@@ -75,4 +86,26 @@ p{
     font-weight:400;
     font-size: 18px;
     color:$azul;
+}
+.ctc-block{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items: center;
+    @include tablet{
+        flex-flow: column wrap;
+        width:100%;
+        max-height:550px;
+        box-sizing: border-box;
+
+    }
+}
+#fax{
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    @include tablet{
+        flex-direction:row;
+        align-items: center;
+    }
 }

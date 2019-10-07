@@ -16,16 +16,18 @@ h3{
     text-align: $centro;
     font-size:25px;
     font-weight:500;
+    margin-bottom:0px;
 }
-
+h4{
+    text-align:$centro;
+}
 a{
     font-size:25px;
     text-align: $centro;
     font-weight:700;
+    color:$blanco;
     &:link{
         text-decoration:none;
         color: $blanco;
-
-
     }
 }

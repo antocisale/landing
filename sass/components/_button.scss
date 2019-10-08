@@ -40,3 +40,16 @@
         transition: background-color 0.8s ease;
     }
 }
+
+#boton{
+    background:rgba(0,0,0,0.6);
+    &:hover{
+        background-color: $blanco;
+    }
+
+}
+#view{
+    &:hover{
+        color: $fondo;
+    }
+}

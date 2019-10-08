@@ -17,6 +17,7 @@ nav{
         justify-content: space-between;
         align-items:middle;
         width:90%;
+        box-sizing:border-box;
    
     }
 }
@@ -24,7 +25,7 @@ nav{
 #menu{
     display:none;
     &:checked {
-        + nav{
+        + #nav{
        display:flex;
        flex-direction: column;
         width:100%;
@@ -59,21 +60,39 @@ li{
 ul{
     padding-left:10px;
 }
-#menu-accesorios{
+.list-2{
     display:none;
+    background-color: $blanco;
+    color:$fondo; 
+    width:130px;
+    height:130px;
+    border-radius: 5px;
+    padding-left: 0px;
+    & li{
+        padding-left:5px;
+        &:hover{
+            background:lighten($gris2,90%);
+
+        }
+    }
 }
-#accesorios{
-    &:hover{
-        + #menu-accesorios{
+#accesorios-but{ 
+    display:none;
+    &:checked{
+        + .list-2{
             display:flex;
             flex-direction: column;
-            position:absolute;
-            top: 50px;
-            left:410px;
-            background-color: $blanco;
-            color:$gris;
-            width:100px;
-            height:150px;
+            justify-content: $centro;
+            width:98%;
+
+            @include desktop{
+                position:absolute;
+                top: 50px;
+                left:410px;
+                width:130px;
+            }
+
+
         }
     }
 }
@@ -112,6 +131,7 @@ ul{
     align-items:center;
     box-sizing: border-box;
     width:25%;
+    padding-left:10px;
 
 }
 
@@ -121,4 +141,17 @@ ul{
     border-radius:5px;
     padding-left:5px;
     border:1px solid $azul;
+}
+
+
+.menu2{
+    font-size:18px;
+    font-weight:400;
+    color:$fondo;
+    &:link{
+        color: $fondo;
+    }  
+    &:hover{
+        color: lighten($fondo, 30%)
+    }
 }
